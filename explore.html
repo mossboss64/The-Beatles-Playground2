@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Beatles Explore</title>
+    <link rel="icon" type="image/png" href="images/header.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asset&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="explore">
+    <div class="home">
+      <a href="index.html">
+        <button class="home-bttn">Back to Home</button>
+      </a>
+    </div>
+    <div id="explorePanel" class="panel red">
+      <h1>A Brief History of the Beatles</h1>
+      <p>Click a year to learn more!</p>
+      <div class="grid">
+        <button class="historyBtn" data-panel="1957">1957</button>
+        <button class="historyBtn" data-panel="1962">1962</button>
+        <button class="historyBtn" data-panel="1963-64">1963-64</button>
+        <button class="historyBtn" data-panel="1967">1967</button>
+        <button class="historyBtn" data-panel="1969">1969</button>
+        <button class="historyBtn" data-panel="1970">1970</button>
+      </div>
+    </div>
+
+    <div id="1957" class="panel" hidden>
+      <h2>1957</h2>
+      <p>
+        John Lennon forms The Quarrymen. Paul soon joins, then George Harrison.
+      </p>
+      <button class="button backBtn">Back</button>
+    </div>
+
+    <div id="1962" class="panel" hidden>
+      <h2>1962</h2>
+      <p>Ringo Starr arrives, completing the legendary lineup.</p>
+      <button class="button backBtn">Back</button>
+    </div>
+
+    <div id="1963-64" class="panel" hidden>
+      <h2>1963-64</h2>
+      <p>Beatlemania rises with nonstop tours and hit singles.</p>
+      <button class="button backBtn">Back</button>
+    </div>
+
+    <div id="1967" class="panel" hidden>
+      <h2>1967</h2>
+      <p>Sgt. Pepper redefines psychedelic and experimental music.</p>
+      <button class="button backBtn">Back</button>
+    </div>
+
+    <div id="1969" class="panel" hidden>
+      <h2>1969</h2>
+      <p>
+        Abbey Road features iconic songwriting and the famous crosswalk cover.
+      </p>
+      <button class="button backBtn">Back</button>
+    </div>
+
+    <div id="1970" class="panel" hidden>
+      <h2>1970</h2>
+      <p>The breakup ends an era as solo careers begin.</p>
+      <button class="button backBtn">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

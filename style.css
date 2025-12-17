@@ -1,0 +1,530 @@
+body {
+  width: 100vw;
+  height: 100%;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+:root {
+  --bg-main: lavender;
+  --bg-accent: pink;
+  --text-color: black;
+}
+
+.maincontent {
+  background: var(--bg-main);
+}
+
+.album-title {
+  background: var(--bg-accent);
+}
+
+.info {
+  background: linear-gradient(180deg, var(--bg-main), var(--bg-accent));
+  color: var(--text-color);
+}
+.row1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.albumcolumn {
+  width: 15%;
+  height: 100%;
+  display: block;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.dividecolumn {
+  width: 100%;
+  height: 50%;
+  display: block;
+  overflow-y: hidden;
+}
+.album {
+  border-radius: 18px;
+  transition: transform 0.25s ease;
+  height: 50%;
+  width: 100%;
+}
+
+.maincontent {
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+.beatlecol-left {
+  width: 100%;
+  height: 100%;
+}
+.beatlecol-right {
+  width: 70%;
+  height: 100%;
+}
+.album-title {
+  width: 100%;
+  height: 30%;
+}
+.info {
+  width: 100%;
+  height: 50%;
+  font-family: "Asset";
+  font-size: 10px;
+  line-height: 1.4;
+  padding: 20px;
+  background: linear-gradient(180deg, lavender, pink);
+}
+.play-pause {
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+.play-button {
+  height: 100%;
+  width: 50%;
+}
+.pause-button {
+  height: 100%;
+  width: 50%;
+}
+.top-section {
+  width: 65%;
+  height: 80%;
+}
+
+.contain-image {
+  max-height: 100%;
+  max-width: 100%;
+}
+.rndm {
+  height: 85px;
+  width: 85px;
+}
+.home-bttn {
+  font-family: "Asset";
+  font-size: 18px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.home-bttn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 0;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+@media only screen and (max-width: 680px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+  .row1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: scroll;
+  }
+  .albumcolumn {
+    width: 100%;
+    height: 25%;
+    display: flex;
+  }
+  .dividecolumn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .album {
+    height: 100%;
+    width: 100%;
+  }
+  .top-section {
+    width: 65%;
+    height: 80%;
+  }
+  .beatlecol-left {
+    width: 150%;
+    height: 100%;
+  }
+  .beatlecol-right {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontent {
+    width: 100%;
+    height: 60%;
+    display: flex;
+  }
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+  #beatle-main {
+    max-width: 85%;
+    max-height: 85%;
+    margin: 0 auto;
+  }
+  .home-bttn {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+  .right-content {
+    order: -1;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .home-button {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-content {
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+
+  .beatle1 {
+    width: 70%;
+    height: auto;
+    flex: 0 0 auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+  }
+  .row1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-y: scroll;
+  }
+  .albumcolumn {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  .dividecolumn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .album {
+    height: 100%;
+    width: 100%;
+  }
+  .top-section {
+    width: 65%;
+    height: 80%;
+  }
+  .beatlecol-left {
+    width: 150%;
+    height: 100%;
+  }
+  .beatlecol-right {
+    width: 100%;
+    height: 100%;
+  }
+  .maincontent {
+    width: 100%;
+    height: 60%;
+    display: flex;
+  }
+  #beatle-main {
+    max-width: 75%;
+    max-height: 75%;
+    margin: 0 auto;
+  }
+
+  .home-bttn {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+}
+.album img {
+}
+.album:hover img {
+  transform: scale(1.09);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+/*home*/
+.heading {
+  height: 25%;
+  width: 100%;
+  background-color: #d32f2f;
+}
+#beatle-main {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#beatle-main:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.35));
+}
+
+.content {
+  height: 75%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("images/content-bg.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: auto;
+}
+#beatle-main.vinyl {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.left-content {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  transition: width 0.3s ease;
+}
+
+.beatle1 {
+  height: 90%;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.AB,
+.EB {
+  width: 180px;
+  max-width: 95%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.AB:hover,
+.EB:hover {
+  transform: translateY(-5px);
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.flip-back img.silhouette {
+  width: 85%;
+  height: auto;
+  object-fit: contain;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.flip-back img.silhouette {
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+/* opaque = not able to be seen through, the default opacity for elements is 1 */
+.translucent {
+  opacity: 0.5;
+}
+
+/* colors */
+.green {
+  background-color: #008d24;
+}
+.lightblue {
+  background-color: #0b69c0;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #e31e24;
+}
+.orange {
+  background-color: #ea6626;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #ffffff;
+}
+.lightgrey {
+  background-color: #a9a9a9;
+}
+.darkgrey {
+  background-color: #707070;
+}
+.brown {
+  background-color: brown;
+}
+.pink {
+  background-color: pink;
+}
+.yellow {
+  background-color: yellow;
+}
+.lightpurple {
+  background-color: lavender;
+}
+.gone {
+  display: none;
+}
+.invisible {
+  visibility: hidden;
+}
+h1 {
+  font-size: 40px;
+}
+/*explore*/
+.explore {
+  background-image: url("images/content-bg.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panel {
+  font-family: Asset;
+  color: #ffff00;
+  border: 2px solid black;
+  padding: 20px;
+  width: 80vw;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.button,
+.historyBtn {
+  font-size: 20px;
+  padding: 10px 30px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
